@@ -12,9 +12,12 @@ const connect = function() {
   // interpret incoming data as text
   conn.setEncoding('utf8');
 
+  // event handler for when the client is officially connected to the server.
   conn.on('connect', function() {
     console.log('client is connected to server');
-      
+    
+    conn.write("Name: RAH");
+
   });
 
 
