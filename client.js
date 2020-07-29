@@ -16,7 +16,13 @@ const connect = function() {
   conn.on('connect', function() {
     console.log('client is connected to server');
     
-    conn.write("Name: RAH");
+    conn.write("Name: RAH"); // Sending the server my initials
+
+    //conn.write("Move: up"); // This will tell the server to move my snake up.
+    //conn.write("Move: down"); // This will tell the server to move my snake down.
+    //conn.write("Move: left"); // This will tell the server to move my snake left.
+    //conn.write("Move: right"); // This will tell the server to move my snake right.
+    //setTimeout(() => conn.write("Move: up"),3000); // This will move my snake up after 3 seconds.
 
   });
 
