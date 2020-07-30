@@ -39,6 +39,18 @@ const setupInput = function(conn) {
       }
 
 
+      if (key === 't') {
+        conn.write("Say: I am Solid Snake");
+      }
+
+      if (key === 'y') {
+        conn.write("Say: Where is everybody?");
+      }
+
+      if (key === 'u') {
+        conn.write("Say: I need sleep...");
+      }
+
     };
     handleUserInput();
   });
